@@ -1,0 +1,93 @@
+﻿@model game.Models.pPrice
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout_user.cshtml";
+}
+
+<h2>詳細資料</h2>
+
+
+
+
+<hr />
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="flex col-12 offset-md-1 col-md-3 sm-6  d-flex justify-content-center align-items-start p-0 img">
+            <img src="@Html.DisplayFor(model => model.Picture)" class="detailimg" />
+        </div>
+        <div class="col-12 col-md-8 col-sm-6">
+            <div class="div embed-responsive-16by9 p-0">
+                <div class="div embed-responsive-item">
+                    <h2 class="bg-danger" style="font-size: 20px">
+                        遊戲影片
+                    </h2>
+                    <iframe class="detvideo" src="@Html.DisplayFor(model => model.video)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <h2 class="text-warning" style="font-size:35px">@Html.DisplayFor(model => model.gTitle)</h2>
+        </div>
+
+        <div class="col-12 text-center">
+            <table align=center class="table table-striped table-hover tabletext rwd-table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.gCompany)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.gDate)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.size)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.type)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.player)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.language)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.purchase)
+                    </th>
+
+                </tr>
+
+
+                <tr>
+                    <td data-th="@Html.DisplayNameFor(model => model.gCompany)">@Html.DisplayFor(model => model.gCompany)</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.gDate)">@Html.DisplayFor(model => model.gDate)</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.Price)">@Html.DisplayFor(model => model.Price)</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.size)">@Html.DisplayFor(model => model.size)+"GB"</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.type)">@Html.DisplayFor(model => model.type)</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.player)">@Html.DisplayFor(model => model.player)+"人遊玩人數"</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.language)">@Html.DisplayFor(model => model.language)</td>
+                    <td data-th="@Html.DisplayNameFor(model => model.purchase)"><a href="@Html.DisplayFor(model => model.purchase)">購物連結</a></td>
+
+                </tr>
+
+            </table>
+
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

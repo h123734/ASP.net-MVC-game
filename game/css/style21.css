@@ -1,0 +1,602 @@
+
+@font-face {
+    font-family: smw;
+    src: url(../fonts/smw.ttf);
+}
+
+@font-face {
+    font-family: KTEGAKI;
+    src: url(../fonts/KTEGAKI.ttf);
+}
+
+@font-face {
+    font-family: Into_Deep;
+    src: url(../fonts/Into_Deep.otf);
+}
+
+@font-face {
+    /*ถ๊ล้*/
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
+
+    @font-face {
+        font-family: 'PAC-FONT';
+        src: url('../fonts/PAC-FONT.TTF') format('truetype');
+    }
+
+.bodyback {
+    line-height: 1.2;
+    height: 150%;
+    background: #ffffff url('https://i.imgur.com/v2sc5Zl.jpg') no-repeat center top;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/**********************************
+***********************************/
+/**********************************
+***********************************/
+.navbarcolor
+{   color:blue;
+    opacity:0.0;
+}
+    .navbarcolor:hover {
+        opacity: 0.8;
+        color:red;
+    }
+
+
+.content {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.carousel img {
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (min-width:769px) {
+    .carousel-item img {
+        max-width: 100%;
+        height: 80vh;
+    }
+}
+
+
+
+.pic {
+    display: inline;
+    color: #000;
+    font-family: 'smw', cursive;
+}
+
+.cheap {
+    font-family: 'Lobster', cursive;
+    font-size: 82px;
+    padding-top: 40px;
+}
+
+.pp {
+    display: inline-block;
+    font-family: 'PAC-FONT', cursive;
+    font-size: 35px;
+    color: yellow;
+}
+
+    .pp p {
+        display: inline;
+    }
+
+h1 {
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 25px;
+    margin: 0px;
+    animation: runhorse 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@media (max-width: 451px){
+    @keyframes runhorse {
+        from {
+            transform: translate(-30%,0px);
+        }
+
+        to {
+            transform: translate(100%,0px);
+        }
+    }
+}
+
+
+
+#countdown {
+    text-align: center;
+    margin: 110px 0px 69px;
+    min-height: 104px;
+}
+
+    #countdown > div {
+        width: 100px;
+        height: 100px;
+        margin: 0px 1%;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 52px;
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+        #countdown > div > span {
+            display: block;
+        }
+
+.input-group-addon {
+    color: #000;
+    background-color: transparent;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+}
+
+.sub-p {
+    color: #368484;
+    font-size: 25px;
+    padding: 5px 0px 15px;
+    font-family: cwTeXYen,sans-serif;
+}
+
+.social ul li {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.section-padding {
+    padding: 60px;
+}
+
+.about-title h2 {
+    font-size: 5vh;
+    font-family: 'Microsoft JhengHei', cursive;
+    padding-bottom: 10px;
+    color: rgb(245,12,25);
+}
+
+.about-title p {
+    font-family: 'cwTeXYen', cursive;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+    .img img {
+        height: 30vh;
+        width: 40vh;
+        margin: 30px 20px;
+        border-radius: 5%;
+        transition: all 0.8s;
+        transform: scale(1,1);
+        opacity: 0.8;
+        overflow: hidden;
+    }
+
+        .img img:hover {
+            transform: scale(1.2,1.2);
+            opacity: 1.2;
+        }
+
+    .img i {
+        font-size: 44px;
+    }
+
+.subcription-info {
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.abt-hd {
+    color: rgb(255, 151, 31);
+    font-family: KTEGAKI;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0px 15px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.border {
+    margin-left: 20px;
+    left: 20px;
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border th {
+    border: 1px solid black;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    color: chartreuse;
+    font-family: fantasy;
+}
+
+.border td {
+    border: 1px solid black;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.size {
+    font-size: 20px;
+}
+
+
+.social a i {
+    color: #fff;
+    display: block;
+    line-height: 48px;
+}
+
+.social a:hover {
+    text-decoration: none;
+}
+
+
+
+
+.validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.subscribe_form {
+    position: relative;
+}
+
+    .subscribe_form .subscribe {
+        width: 100px;
+        height: 30px;
+        color: rgb(255, 151, 31);
+        background-color: #24B7A4;
+        border: medium none;
+        font-family: "Roboto Slab",serif;
+        font-size: 15px;
+        margin-left: -15px;
+    }
+
+h2.subs-title {
+    font-family: 'Acme', cursive;
+    font-size: 34px;
+    padding: 30px 0px 20px;
+    color: rgb(227,208,13)
+}
+
+.subscribe_form input {
+    height: 30px;
+    border: none;
+    width: 70vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #000;
+    padding-left: 10px;
+}
+
+.searchtitle {
+    margin-top:15vh;
+}
+
+
+/*******************************
+    List.html
+*******************************/
+.tdimg {
+    width: auto;
+    height: 23vh;
+}
+.h3 a {
+    color:black;
+}
+
+/****************
+ Detail.cshtml
+*****************/
+.detailimg {
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.detvideo {
+    width: 100%;
+    height: 45vh;
+}
+
+
+.rwd-table {
+    width: 100%;
+   
+    border-collapse: collapse;
+}
+
+    .rwd-table th,
+    td {
+        border: 1px solid #000000;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+@media screen and (max-width: 451px) {
+
+    .rwd-table tr {
+        border: 3px solid #000000;
+    }
+
+    .rwd-table th {
+        display: none;
+    }
+
+    .rwd-table td {
+        display: block;
+        border: none;
+    }
+
+        .rwd-table td:before {
+            content: attr(data-th) " ";
+            float: left;
+            font-weight: bold;
+        }
+}
+
+.tabletext
+td {
+    background-color: tomato;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 15px;
+    align-content: center;
+    }
+
+.tabletext
+th {
+    background-color: tomato;
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    padding: 15px;
+    align-content: center;
+   }
+
+
+/****************
+   admindex.html
+*****************/
+
+.admindex {
+    line-height: 1.2;
+    height: 150%;
+    background: #ffffff url('https://i.imgur.com/v2sc5Zl.jpg') no-repeat center top;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*****************************************
+    Layout.cshtml
+**********************************/
+
+
+.logo {
+    position: relative;
+    padding: 0px;
+    height: 10vh;
+    margin-left: 5vw;
+    opacity:1.0;
+}
+
+.bar {
+    display: inline;
+    align-self: center;
+    justify-content: center;
+    /*margin-left:25vw;*/
+    margin-top: 0px;
+    padding:0px;
+    font-size: 25px;
+}
+
+    .bar ul {
+        display: inline;
+      }
+
+    .bar li {
+        /*font-size: 25px;*/
+        border: solid 1px #ffffff;
+    }
+
+    /*.bar a {
+        font-size: 25px;}
+
+    .bar button {
+        font-size:25px;
+    }*/
+
+.login {
+    font-size: 2vh;
+    }
+
+
+
+
+.lyfooter1 {
+    background: linear-gradient(to left,#AAA 0%,#888 50%,#444)
+}
+
+.lyfooter2 {
+    background: linear-gradient(to left,#2d5cf9 0%,#579bf5 50%,#6693fc)
+}
+
+.lyfooter3 {
+    background: linear-gradient(to left,#fa6709 0%,#fb8a41 50%,#f6a773)
+}
+
+.aaa {
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    justify-content: center;
+    width: 100vw;
+}
+
+    footer :hover {
+        display: none;
+        bottom: -30px;
+    }
+
+    footer p {
+        font-family: cwTeXYen;
+        font-size: 3vh;
+    }
+.count {
+    font-family: cwTeXYen;
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+}
+
+
+
+
+
+/*************
+    Login.cshtml
+ ***************/
+.btnsize {
+    width: 55px;
+    height: 48px;
+    font-size: 80px;
+}
+
+.divbtn {
+    height: 55px
+}
+
+.fortest {
+    color: red;
+}
+
+/******************
+    Edit.cshtml
+*******************/
+.edit input {
+    margin-left: 30px;
+}
+
+
+
+
+
+/**********************************
+Media Queries
+***********************************/
+@media (min-width: 501px) and (max-width: 901px) {
+    .contact-title {
+        padding: 15px;
+    }
+
+    .section-padding {
+        padding: 60px 30px;
+    }
+
+    .subscribe {
+        width: 100px;
+        font-size: 15px;
+    }
+    /* .subcription-info {
+        width: 100%;
+        margin: 0 auto;
+} */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 20px) and (max-width: 500px) {
+    .contact-title {
+        padding: 15px;
+    }
+
+    .section-padding {
+        padding: 60px 30px;
+    }
+
+    /*.subscribe_form .subscribe {
+        width: 100px;
+        font-size: 15px;
+    }*/
+    /* .subcription-info {
+        width: 100%;
+        margin: 0 auto;
+} */
+}

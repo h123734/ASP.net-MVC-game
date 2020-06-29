@@ -1,0 +1,37 @@
+﻿<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+@{
+    ViewBag.Title = "About";
+}
+<h2 class="ml-5 pt-md-3 mt-md-5">@ViewBag.Title</h2>
+
+<h1 class="text-danger">歡迎光臨本網站，本站以Switch遊戲為主，目前有蠻多功能尚在建構中，請進搜尋頁面搜尋看看相關資料，謝謝～</h1>
+<div class="container">
+    <div class="carousel slide" data-ride="carousel" id="carousel-demo">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-demo" data-slide-to="1"></li>
+            <li data-target="#carousel-demo" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_412_8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="d-block w-100" src="http://farm4.staticflickr.com/3795/9269794168_3ac58fc15c_b.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_3266_19.jpg" alt="">
+            </div>
+
+            <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>

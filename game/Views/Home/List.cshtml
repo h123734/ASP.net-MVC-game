@@ -1,0 +1,80 @@
+﻿
+@model IEnumerable<game.Models.pPrice>
+
+@{
+    ViewBag.Title = "新增遊戲資料頁面";
+}
+<h1 class="pt-md-3"></h1>
+<h2 class="ml-5 pt-md-5 mt-md-5">List</h2>
+
+<p class="ml-3 h3">
+    @Html.ActionLink("新增資料", "Create")
+</p>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <table class="table rwd-table">
+                    <tr class="size">
+                        <th>
+                            @Html.DisplayNameFor(model => model.gTitle)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.gCompany)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.gDate)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Picture)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.video)
+                        </th>
+                        <th>
+                            管理
+                        </th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr class="size">
+                            <td data-th="@Html.DisplayNameFor(model => model.gTitle)" style="color:red">
+                                @Html.DisplayFor(modelItem => item.gTitle)
+                            </td>
+                            <td data-th="@Html.DisplayNameFor(model => model.gCompany)">
+                                @Html.DisplayFor(modelItem => item.gCompany)
+                            </td>
+                            <td data-th="@Html.DisplayNameFor(model => model.gDate)">
+                                @Html.DisplayFor(modelItem => item.gDate)
+                            </td>
+                            <td data-th="@Html.DisplayNameFor(model => model.Price)">
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                            <td data-th="@Html.DisplayNameFor(model => model.Picture)">
+                                <img src="@item.Picture" class="tdimg" />
+                            </td>
+                            <td data-th="@Html.DisplayNameFor(model => model.video)">
+                                <a href=" @Html.DisplayFor(modelItem => item.video)"class="text-primary">影片</a>
+                            </td>
+                            
+                            <td data-th="管理">
+                                @Html.ActionLink("Edit", "Edit", new { id = item.gId },new { @class="text-warning font-weight-bold"}) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.gId },new { @class="text-danger font-weight-bold"})
+                                @Html.ActionLink("Detail", "Detail","Search", new { id = item.gId },new { @class = "btn btn-info text-white", @style = "font-size:15px" })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("返回列表", "Index1","Home")
+        </div>
+
+    </div>
+</body>   

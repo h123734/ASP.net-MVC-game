@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h2 class="">Upload</h2>
+
+<form action="@Url.Action("Upload")" method="post" enctype="multipart/form-data" class="ml-5">
+    
+    <input type="file" name="file" id="file" accept="image/gif, image/jpeg, image/png, image/jpg" class="ml-5" style="font-size:15px"/>
+    <input type="submit" value="新增" class="btn btn-default ml-5" style="font-size:15px">
+</form>
