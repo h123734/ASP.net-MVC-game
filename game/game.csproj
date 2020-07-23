@@ -179,8 +179,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\custom.js" />
-    <Content Include="js\jquery.countdown.min.js" />
     <Content Include="js\jquery.min.js" />
+    <Content Include="js\lazysizes.min.js" />
     <Content Include="js\wow.js" />
     <Content Include="Models\web108b12.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -214,6 +214,7 @@
     <Content Include="Models\web108b12.edmx.diagram">
       <DependentUpon>web108b12.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\cwTeXYen-zhonly.woff2" />
     <None Include="Properties\PublishProfiles\somee.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
