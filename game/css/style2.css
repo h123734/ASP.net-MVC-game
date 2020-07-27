@@ -16,10 +16,10 @@
 
 @font-face {
     /*ถ๊ล้*/
-    font-family: 'cwTeXYen';
+    font-family: cwTeXYen;
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/cwTeXYen-zhonly.woff2) format('truetype');
+    src: url(../fonts/cwTeXYen-zhonly.woff2) format('truetype');
 }
 
 
@@ -515,14 +515,14 @@ footer {
     }
 
     footer p {
-        font-family: cwTeXYen;
+        font-family: cwTeXYen,sans-serif;
         font-size: 3vh;
     }
 .count {
-    font-family: cwTeXYen;
+    font-family: cwTeXYen,sans-serif;
     font-size: 20px;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -545,58 +545,62 @@ footer {
 .fortest {
     color: red;
 }
+@media (min-width: 501px) and (max-width: 901px) {
+    .fortest {
+        width:auto
+    }
 
-/******************
+    /******************
     Edit.cshtml
 *******************/
-.edit input {
-    margin-left: 30px;
-}
+    .edit input {
+        margin-left: 30px;
+    }
 
 
 
 
 
-/**********************************
+    /**********************************
 Media Queries
 ***********************************/
-@media (min-width: 501px) and (max-width: 901px) {
-    .contact-title {
-        padding: 15px;
-    }
+    @media (min-width: 501px) and (max-width: 901px) {
+        .contact-title {
+            padding: 15px;
+        }
 
-    .section-padding {
-        padding: 60px 30px;
-    }
+        .section-padding {
+            padding: 60px 30px;
+        }
 
-    .subscribe {
-        width: 100px;
-        font-size: 15px;
-    }
-    /* .subcription-info {
+        .subscribe {
+            width: 100px;
+            font-size: 15px;
+        }
+        /* .subcription-info {
         width: 100%;
         margin: 0 auto;
 } */
-    body {
-        overflow-x: hidden;
-    }
-}
-
-@media (min-width: 20px) and (max-width: 500px) {
-    .contact-title {
-        padding: 15px;
+        body {
+            overflow-x: hidden;
+        }
     }
 
-    .section-padding {
-        padding: 60px 30px;
-    }
+    @media (min-width: 20px) and (max-width: 500px) {
+        .contact-title {
+            padding: 15px;
+        }
 
-    /*.subscribe_form .subscribe {
+        .section-padding {
+            padding: 60px 30px;
+        }
+
+        /*.subscribe_form .subscribe {
         width: 100px;
         font-size: 15px;
     }*/
-    /* .subcription-info {
+        /* .subcription-info {
         width: 100%;
         margin: 0 auto;
 } */
-}
+    }
